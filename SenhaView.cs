@@ -55,9 +55,8 @@ namespace SenhaMVC
         private void btnJogar_Click(object sender, EventArgs e)
         {
             controller.EfetuarJogada();
-
-            if (controller.JogoAcabou())
-                controller.ReiniciarJogo();
+            dgvJogadas.ClearSelection();
+            dgvResultados.ClearSelection();
         }
     }
 }

@@ -80,10 +80,7 @@
         {
             foreach (var corSelecionada in jogadaEfetuada)
             {
-                if (corSelecionada.Item1 == string.Empty)
-                    return false;
-
-                if(jogadaEfetuada.Count(cor => cor.Item1 == corSelecionada.Item1) > 1)
+                if (corSelecionada.Item1 == string.Empty || jogadaEfetuada.Count(cor => cor.Item1 == corSelecionada.Item1) > 1)
                     return false;
             }
 

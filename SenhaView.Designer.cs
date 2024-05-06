@@ -78,9 +78,11 @@ namespace SenhaMVC
             grbJogadas.Controls.Add(cbxCorSelecionada4);
             grbJogadas.Controls.Add(cbxCorSelecionada5);
             grbJogadas.Controls.Add(btnJogar);
-            grbJogadas.Location = new Point(15, 26);
+            grbJogadas.Location = new Point(13, 20);
+            grbJogadas.Margin = new Padding(3, 2, 3, 2);
             grbJogadas.Name = "grbJogadas";
-            grbJogadas.Size = new Size(895, 86);
+            grbJogadas.Padding = new Padding(3, 2, 3, 2);
+            grbJogadas.Size = new Size(783, 64);
             grbJogadas.TabIndex = 0;
             grbJogadas.TabStop = false;
             grbJogadas.Text = "Jogadas";
@@ -89,53 +91,59 @@ namespace SenhaMVC
             // 
             cbxCorSelecionada1.DrawMode = DrawMode.OwnerDrawFixed;
             cbxCorSelecionada1.FormattingEnabled = true;
-            cbxCorSelecionada1.Location = new Point(10, 36);
+            cbxCorSelecionada1.Location = new Point(9, 27);
+            cbxCorSelecionada1.Margin = new Padding(3, 2, 3, 2);
             cbxCorSelecionada1.Name = "cbxCorSelecionada1";
-            cbxCorSelecionada1.Size = new Size(123, 28);
+            cbxCorSelecionada1.Size = new Size(108, 24);
             cbxCorSelecionada1.TabIndex = 1;
             // 
             // cbxCorSelecionada2
             // 
             cbxCorSelecionada2.DrawMode = DrawMode.OwnerDrawFixed;
             cbxCorSelecionada2.FormattingEnabled = true;
-            cbxCorSelecionada2.Location = new Point(139, 36);
+            cbxCorSelecionada2.Location = new Point(122, 27);
+            cbxCorSelecionada2.Margin = new Padding(3, 2, 3, 2);
             cbxCorSelecionada2.Name = "cbxCorSelecionada2";
-            cbxCorSelecionada2.Size = new Size(123, 28);
+            cbxCorSelecionada2.Size = new Size(108, 24);
             cbxCorSelecionada2.TabIndex = 2;
             // 
             // cbxCorSelecionada3
             // 
             cbxCorSelecionada3.DrawMode = DrawMode.OwnerDrawFixed;
             cbxCorSelecionada3.FormattingEnabled = true;
-            cbxCorSelecionada3.Location = new Point(268, 36);
+            cbxCorSelecionada3.Location = new Point(234, 27);
+            cbxCorSelecionada3.Margin = new Padding(3, 2, 3, 2);
             cbxCorSelecionada3.Name = "cbxCorSelecionada3";
-            cbxCorSelecionada3.Size = new Size(123, 28);
+            cbxCorSelecionada3.Size = new Size(108, 24);
             cbxCorSelecionada3.TabIndex = 3;
             // 
             // cbxCorSelecionada4
             // 
             cbxCorSelecionada4.DrawMode = DrawMode.OwnerDrawFixed;
             cbxCorSelecionada4.FormattingEnabled = true;
-            cbxCorSelecionada4.Location = new Point(397, 36);
+            cbxCorSelecionada4.Location = new Point(347, 27);
+            cbxCorSelecionada4.Margin = new Padding(3, 2, 3, 2);
             cbxCorSelecionada4.Name = "cbxCorSelecionada4";
-            cbxCorSelecionada4.Size = new Size(123, 28);
+            cbxCorSelecionada4.Size = new Size(108, 24);
             cbxCorSelecionada4.TabIndex = 4;
             // 
             // cbxCorSelecionada5
             // 
             cbxCorSelecionada5.DrawMode = DrawMode.OwnerDrawFixed;
             cbxCorSelecionada5.FormattingEnabled = true;
-            cbxCorSelecionada5.Location = new Point(526, 36);
+            cbxCorSelecionada5.Location = new Point(460, 27);
+            cbxCorSelecionada5.Margin = new Padding(3, 2, 3, 2);
             cbxCorSelecionada5.Name = "cbxCorSelecionada5";
-            cbxCorSelecionada5.Size = new Size(123, 28);
+            cbxCorSelecionada5.Size = new Size(108, 24);
             cbxCorSelecionada5.TabIndex = 5;
             // 
             // btnJogar
             // 
-            btnJogar.Location = new Point(768, 36);
+            btnJogar.Location = new Point(672, 27);
+            btnJogar.Margin = new Padding(3, 2, 3, 2);
             btnJogar.Name = "btnJogar";
-            btnJogar.Size = new Size(94, 29);
-            btnJogar.TabIndex = 0;
+            btnJogar.Size = new Size(82, 22);
+            btnJogar.TabIndex = 6;
             btnJogar.Text = "Jogar";
             btnJogar.UseVisualStyleBackColor = true;
             btnJogar.Click += btnJogar_Click;
@@ -146,12 +154,13 @@ namespace SenhaMVC
             dgvJogadas.ColumnHeadersHeight = 29;
             dgvJogadas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvJogadas.Columns.AddRange(new DataGridViewColumn[] { CorJogada1, CorJogada2, CorJogada3, CorJogada4, CorJogada5 });
-            dgvJogadas.Location = new Point(15, 161);
+            dgvJogadas.Location = new Point(13, 121);
+            dgvJogadas.Margin = new Padding(3, 2, 3, 2);
             dgvJogadas.Name = "dgvJogadas";
             dgvJogadas.RowHeadersWidth = 51;
             dgvJogadas.ScrollBars = ScrollBars.Vertical;
-            dgvJogadas.Size = new Size(458, 409);
-            dgvJogadas.TabIndex = 1;
+            dgvJogadas.Size = new Size(401, 307);
+            dgvJogadas.TabIndex = 7;
             // 
             // CorJogada1
             // 
@@ -205,12 +214,13 @@ namespace SenhaMVC
             dgvResultados.AllowUserToAddRows = false;
             dgvResultados.ColumnHeadersHeight = 29;
             dgvResultados.Columns.AddRange(new DataGridViewColumn[] { CorResultado1, CorResultado2, CorResultado3, CorResultado4, CorResultado5 });
-            dgvResultados.Location = new Point(509, 161);
+            dgvResultados.Location = new Point(445, 121);
+            dgvResultados.Margin = new Padding(3, 2, 3, 2);
             dgvResultados.Name = "dgvResultados";
             dgvResultados.RowHeadersWidth = 51;
             dgvResultados.ScrollBars = ScrollBars.Vertical;
-            dgvResultados.Size = new Size(401, 409);
-            dgvResultados.TabIndex = 2;
+            dgvResultados.Size = new Size(351, 307);
+            dgvResultados.TabIndex = 8;
             // 
             // CorResultado1
             // 
@@ -260,31 +270,32 @@ namespace SenhaMVC
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(15, 131);
+            label1.Location = new Point(13, 98);
             label1.Name = "label1";
-            label1.Size = new Size(63, 20);
+            label1.Size = new Size(49, 15);
             label1.TabIndex = 3;
             label1.Text = "Jogadas";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(509, 131);
+            label2.Location = new Point(445, 98);
             label2.Name = "label2";
-            label2.Size = new Size(81, 20);
+            label2.Size = new Size(64, 15);
             label2.TabIndex = 4;
             label2.Text = "Resultados";
             // 
             // SenhaView
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(948, 592);
+            ClientSize = new Size(830, 444);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dgvResultados);
             Controls.Add(dgvJogadas);
             Controls.Add(grbJogadas);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SenhaView";
             Text = "Senha";
             grbJogadas.ResumeLayout(false);

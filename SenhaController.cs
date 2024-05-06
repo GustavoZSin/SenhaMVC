@@ -27,7 +27,7 @@
                 senhaModel.InserirJogada(jogadaEfetuada.Select(t => t.Item1).ToList());
 
                 List<string> ultimoResultado = senhaModel.ObterUltimoResultado();
-                senhaView.Resultados.Rows.Add(FormataLinhaResultado(ultimoResultado)); 
+                senhaView.Resultados.Rows.Add(FormataLinhaResultado(ultimoResultado));
             }
             else
             {
@@ -35,6 +35,9 @@
                     "\nTodos os campos devem ser preenchidos com cores diferentes. " +
                     "\nRevise o que foi preenchido e tente novamente!");
             }
+
+            if (JogoAcabou())
+                ReiniciarJogo();
         }
         private DataGridViewRow FormataLinhaJogada(List<Tuple<string, Color>> jogadaEfetuada)
         {
@@ -67,7 +70,7 @@
 
             return resultadoRow;
         }
-        public bool JogoAcabou()
+        private bool JogoAcabou()
         {
             bool jogoAcabou = false;
 
@@ -85,7 +88,7 @@
 
             return jogoAcabou;
         }
-        public void ReiniciarJogo()
+        private void ReiniciarJogo()
         {
             senhaView.Resultados.Rows.Clear();
             senhaView.Jogadas.Rows.Clear();
